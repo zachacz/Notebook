@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:padding="15px"
+        />
+
+    <Button
+        android:id="@+id/buttonAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NOTE"
+        android:onClick="addNote"
+        />
+
+    <Button
+        android:id="@+id/buttonDeleteNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE NOTE"
+        android:onClick="deleteNote"
+        />
+
+    <Button
+        android:id="@+id/buttonEditNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT NOTE"
+        android:onClick="editNote"
+        />
+
+    <TextView
+        android:id="@+id/textNotesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px"
+        android:text="Notes list:"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
